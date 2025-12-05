@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+*.spec
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Evidence Files - DO NOT COMMIT
+*.ibd
+*.ibdata
+evidence/
+exports/
+
+# API Keys - NEVER COMMIT
+.env
+secrets.py
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Logs
+*.log
+logs/
