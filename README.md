@@ -1,18 +1,148 @@
-# InnoSleuth 🔍
+🛡️ InnoSleuth
+Advanced InnoDB Forensics, Threat Intelligence & IOC Analysis Framework - A comprehensive forensic analysis tool for MySQL/MariaDB InnoDB databases with integrated threat intelligence enrichment and indicator of compromise detection.
 
-**InnoDB Forensic Analysis Tool** for MySQL/MariaDB database forensics.
+📌 Overview
 
-## Features
+InnoSleuth is an advanced forensic analysis platform designed to analyze InnoDB tablespaces, UNDO pages, REDO logs, BLOB pages, and compressed records, while integrating powerful IOC hunting, Threat Intelligence correlation, AI anomaly detection, and YARA rule scanning.
 
-- 🔬 **InnoDB Page Analysis** - Parse and analyze InnoDB tablespace files (.ibd)
-- 🔄 **Data Recovery** - Extract deleted records and reconstruct messages
-- 🧬 **Schema Detection** - Automatic table schema identification
-- 🔐 **TDE Decryption** - Transparent Data Encryption support
-- 📊 **Entropy Analysis** - Detect encrypted/compressed data
-- 🌐 **Threat Intelligence** - VirusTotal, AlienVault OTX, AbuseIPDB integration
-- 📑 **PDF Reports** - Professional forensic reports with chain of custody
+It is designed for:
 
-## Installation
+Digital Forensic Analysts
+
+Incident Responders
+
+Threat Intelligence Teams
+
+Law Enforcement
+
+Researchers
+
+Malware & Fraud Investigators
+
+With InnoSleuth, you can investigate compromised MySQL systems, extract deleted records, identify malicious indicators, detect suspicious communication, and produce full forensic PDF reports.
+
+🚀 Key Features
+🔍 InnoDB Deep Forensics
+
+Parse InnoDB 16KB pages
+
+Extract active & deleted records
+
+UNDO/REDO log parsing
+
+BLOB/ZBLOB decompression (zlib)
+
+UTF-8/UTF-16 text carving
+
+Heuristic record reconstruction
+
+In-page artifact recovery
+
+🧠 AI Detection Engine
+
+Naive Bayes–based suspicious content classifier
+
+Detects:
+
+Fraud
+
+Malware-related text
+
+Illegal activity
+
+Suspicious communication patterns
+
+Text normalization + risk scoring
+
+🛡️ IOC & Threat Intelligence Engine
+
+Detects over 20 indicator types, including:
+
+IP addresses
+
+URLs
+
+Domains
+
+Emails
+
+Bitcoin/crypto wallets
+
+File hashes (MD5/SHA1/SHA256)
+
+Phone numbers
+
+Malware keywords
+
+Command patterns
+
+Includes:
+
+ThreatScore rating
+
+Indicator mapping per artifact
+
+IOC → YARA → AI fusion results
+
+Automatic flagging of high-risk pages
+
+🧬 Carving Engine
+
+Extracts embedded files from database pages:
+
+PDF
+
+ZIP
+
+PNG
+
+JPG
+
+Raw binary blobs
+
+📦 Message Reconstruction Engine
+
+Rebuilds communication fragments from:
+
+WhatsApp-like BLOBs
+
+Telegram fragments
+
+Splitted text segments
+
+Base64 encoded blocks
+
+📊 Visual Analytics
+
+Timeline of recovered messages
+
+Encrypted/High-entropy heatmap
+
+Network graph of related entities
+
+IOC–Artifact relation graph
+
+📄 Professional PDF Reporting
+
+Generates full forensic reports including:
+
+Case metadata
+
+All indicators
+
+Extracted messages
+
+IOC hits
+
+Suspicious content
+
+Artifacts table
+
+Bookmarks
+
+Risk coloration
+
+🛠️ Installation
 
 ```bash
 # Clone or extract
@@ -24,8 +154,21 @@ pip install -r requirements.txt
 # Run
 python main.py
 ```
+📦 Dependencies
+numpy
+pandas
+pyqt6
+matplotlib
+networkx
+python-dateutil
+cryptography
+fpdf
+zlib
+yara-python
+cupy
 
-## Project Structure
+
+📂 Project Structure
 
 ```
 InnoSleuth_Final/
@@ -40,6 +183,10 @@ InnoSleuth_Final/
 ├── gui/                 # PyQt6 interface wrappers
 └── utils/               # Utility wrappers
 ```
+📸 Screenshots
+main_interface
+<img width="3072" height="1815" alt="image" src="https://github.com/user-attachments/assets/3375ab04-1cf9-4873-b179-005314eb1aa1" />
+
 
 ## Usage
 
