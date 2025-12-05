@@ -184,9 +184,20 @@ InnoSleuth_Final/
 └── utils/               # Utility wrappers
 ```
 📸 Screenshots
-main_interface
+Main Interface
 <img width="3072" height="1815" alt="image" src="https://github.com/user-attachments/assets/3375ab04-1cf9-4873-b179-005314eb1aa1" />
 
+Analysis View
+<img width="3072" height="1767" alt="image" src="https://github.com/user-attachments/assets/7b6738c4-a05f-4956-b53e-da299ac88c40" />
+
+Timeline
+
+Heatmap
+
+IOC hits
+<img width="3072" height="1405" alt="image" src="https://github.com/user-attachments/assets/73bfbaa7-ce77-4337-be66-a1f4c2647872" />
+
+Report
 
 ## Usage
 
