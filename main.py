@@ -4,7 +4,7 @@ InnoSleuth - InnoDB Forensic Analysis Tool
 Main Entry Point
 
 Version: 2.0
-Author: Digital Forensics Student
+Author: Anwar Yousef
 """
 
 import sys
